@@ -10,6 +10,19 @@ class _pagedown(object):
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>            
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Converter.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Sanitizer.min.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [["$$", "$$"], ["\\[","\\]"]]
+    },
+    "HTML-CSS": {
+        availableFonts: ["STIX", "TeX"],
+        linebreaks: { automatic: true },
+        imageFont: null 
+    }
+});
+</script>
 ''')
 
     def html_head(self):

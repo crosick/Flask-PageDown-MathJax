@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_wtf import Form
-from flask_pagedown import PageDown
-from flask_pagedown.fields import PageDownField
+from flask_PageDown import PageDown
+from flask_PageDown.fields import PageDownField
 from wtforms.fields import SubmitField
 
 app = Flask(__name__)
